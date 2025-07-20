@@ -172,8 +172,9 @@ def main():
     auto_keyboard.show_config()
     
     # 詢問是否要修改設定
-    print("\n是否要修改設定？(y/n，預設n): ", end="")
-    modify_config = input().strip().lower()
+    # print("\n是否要修改設定？(y/n，預設n): ", end="")
+    # modify_config = input().strip().lower()
+    modify_config = 'n'
     
     if modify_config == 'y':
         # 修改間隔時間
@@ -201,6 +202,7 @@ def main():
             print(f"輸入無效: {e}，保持原設定")
     
     print()
+    time.sleep(5)
     print("程序開始運行...")
     print("=" * 50)
     
